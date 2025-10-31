@@ -69,7 +69,7 @@ Static libraries to: /usr/local/lib/
 
 # Building the Project
 
-1. Clone this repository:
+1. ## Clone this repository:
 
 git clone https://github.com/DhanushD22/office-bot.git
 cd Face-Recognition-Jetson-Nano
@@ -85,11 +85,11 @@ g++ ../src/*.cpp -I../include -I/usr/local/include/ncnn \
     -ldl -lpthread -fopenmp \
     -o FaceRecognition
 
-2. Create required directories:
+2. ## Create required directories:
 
 mkdir -p models/mtcnn models/mobilefacenet models/retina models/live img
 
-3. Then copy the trained NCNN model files into the models/ directory:
+3. ## Then copy the trained NCNN model files into the models/ directory:
 models/
 ├── mtcnn/
 │   ├── det1.param
@@ -112,14 +112,14 @@ models/
 
 Tip: You must have the models/ directory inside the same folder where you run the binary (build/).
 
-4. Add Sample Images
+4. ## Add Sample Images
 
 You can test with any face image(inside build folder). Example:
 cd img/
 wget https://raw.githubusercontent.com/opencv/opencv/master/samples/data/lena.jpg
 cd ..
 
-5. Run the Application
+5. ## Run the Application
 
 From inside the build/ directory:
 
