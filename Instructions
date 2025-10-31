@@ -61,11 +61,8 @@ g++ ../src/*.cpp -I../include -I/usr/local/include/ncnn \
     -ldl -lpthread -fopenmp \
     -o FaceRecognition
 
-2. ## Create required directories:
 
-mkdir -p models/mtcnn models/mobilefacenet models/retina models/live img
-
-3. ## Then copy the trained NCNN model files into the models/ directory:
+2. ## Then copy the trained NCNN model files into the models/ directory:
 models/
 ├── mtcnn/
 │   ├── det1.param
@@ -88,7 +85,7 @@ models/
 
 Tip: You must have the models/ directory inside the same folder where you run the binary (build/).
 
-4. ## Add Sample Images
+3. ## Add Sample Images
 
 You can test with any face image(inside build folder). Example:
 cd img/
